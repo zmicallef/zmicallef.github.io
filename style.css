@@ -1,0 +1,103 @@
+@font-face {
+    font-family: Junicode;
+    src: url("Junicode-RegularCondensed-webfont.woff");
+}
+
+* {
+    text-rendering: geometricPrecision;
+}
+
+#acknowledgement {
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    background: rgba(255,255,255,0.9);
+    z-index: 20;
+    transition: 0.25s ease-out;
+    cursor:pointer;
+}
+
+#acknowledgement p {
+    position:relative;
+    padding:50px;
+    width:80vw;
+    height:70vh;
+    font-family: Junicode;
+    font-weight: 400;
+    font-size: 6vw;
+    left:50%;
+    top:35%;
+    transform:translate(-50%,-50%);
+    pointer-events: all;
+    line-height: 1;
+}
+
+#left-title{
+    position:fixed;
+    width:100vw;
+    height:100vw;
+    padding:10px;
+}
+
+#left-title h1 {
+    font-family: Helvetica;
+    font-weight: 200;
+    font-size: 0.8vw;
+    line-height: 0.6;
+}
+
+#left-title #bold {
+    font-weight: 500;
+}
+
+#mid-title{
+    position:fixed;
+    width:100vw;
+    height:100vw;
+    padding:10px;
+}
+
+#mid-title h1 {
+    position:relative;
+    left:45%;
+    font-family: Helvetica;
+    font-weight: 400;
+    font-size: 0.8vw;
+    line-height: 0.6;
+}
+
+#right-title{
+    position:fixed;
+    width:100vw;
+    height:100vw;
+    padding:10px;
+}
+
+#right-title h1 {
+    position:relative;
+    left:92%;
+    font-family: Helvetica;
+    font-weight: 400;
+    font-size: 0.8vw;
+    line-height: 0.6;
+}
+
+#grid-container {
+    position:relative;
+    top:300px;
+    z-index: -1;
+}
+
+#works {
+    display: grid; 
+    grid-template-columns: repeat(10, 1fr); 
+    grid-template-rows: repeat(5, 50%); 
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; 
+}
+
+#works #div1 { grid-area: 1 / 1 / 4 / 4; max-width: 100%;} 
+#works #div2 { grid-area: 4 / 2 / 6 / 5; max-width: 100%;} 
+#works #div3 { grid-area: 2 / 4 / 4 / 7; max-width: 100%;} 
+#works #div4 { grid-area: 1 / 7 / 3 / 10; max-width: 100%;} 
+#works #div5 { grid-area: 3 / 8 / 6 / 11; max-width: 100%;} 

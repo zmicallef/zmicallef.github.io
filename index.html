@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sophie Spence</title>
+</head>
+<body>
+
+<div id="acknowledgement">
+    <p>I acknowledge the traditional owners and sovereign custodians of the land on which I live and work, the peoples of the Woiworrung and Boonwurrung language groups. I extend my respect to their Ancestors and all First Peoples and Elders past, present, and emerging.</p>
+</div>    
+
+
+<div id="left-title">
+    <h1 id="bold">Sophie Spence</h1>
+    <h1>Photographer</h1>
+</div>    
+
+<div id="mid-title">
+    <h1>sspence@gmail.com</h1>
+    <h1>(+61) 455 555 555</h1>
+</div>  
+
+<div id="right-title">
+    <h1>CV</h1>
+    <h1>Instagram</h1>
+</div> 
+
+<div id="grid-container">
+    <div id="works">
+        <img id="div1" src="Screen Shot 2021-07-21 at 1.31.32 pm.png">
+        <img id="div2" src="Screen Shot 2021-07-21 at 1.31.40 pm.png">
+        <img id="div3" src="Screen Shot 2021-07-21 at 1.31.46 pm.png">
+        <img id="div4" src="Screen Shot 2021-07-21 at 1.31.55 pm.png">
+        <img id="div5" src="Screen Shot 2021-07-21 at 1.32.02 pm.png">
+    </div>
+</div>
+
+
+</body>
+
+<script>
+
+const acknowledgement = document.querySelector('#acknowledgement');
+
+acknowledgement.addEventListener('click', () => {
+    document.querySelector('#acknowledgement').style.display="none";
+    document.querySelector('#acknowledgement').style.pointerEvents="none";
+})
+</script>
+
+</html>
