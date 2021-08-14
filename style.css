@@ -20,16 +20,17 @@
 #acknowledgement p {
     position:relative;
     padding:50px;
-    width:80vw;
+    width:40vw;
     height:70vh;
-    font-family: Junicode;
+    font-family: Times;
     font-weight: 400;
-    font-size: 6vw;
-    left:50%;
-    top:35%;
+    font-size: 3vw;
+    left:20%;
+    top:30%;
     transform:translate(-50%,-50%);
     pointer-events: all;
     line-height: 1;
+    margin-bottom:-30%;
 }
 
 #left-title{
