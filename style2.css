@@ -153,4 +153,52 @@ a:hover {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
+
+  @media only screen and (max-device-width : 1024px) {
+
+    #home-img {
+        max-height:50vh;
+    }
+
+    #left-title h1{
+        font-size: 14px;
+    }
+    #mid-title h1{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    #right-title h1{
+        font-size:14px;
+    }
+    #left-title{
+        width:40vw;
+        left:10px;
+        top:77vh;
+    }
+    #mid-title{
+        width:95vw;
+        left:10px;
+        top:83vh;
+    }
+    #right-title{
+        width:95vw;
+        left:10px;
+        top:93vh;
+    }
+    .mySlides img {
+        max-width:80vw;
+      }
+    .prev, .next {
+        top:30%;
+    }
+    .prev {
+        left:-5px;
+    }
+    .next {
+        right:-5px;
+    }
+    a:hover{
+        color:black;
+    }
+  }
   
