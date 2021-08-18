@@ -9,6 +9,7 @@
 
 #acknowledgement {
     position:fixed;
+    display:none;
     width:100vw;
     height:100vh;
     background: rgba(255,255,255,0.9);
@@ -33,72 +34,117 @@
     margin-bottom:-30%;
 }
 
+a {
+    text-decoration: none;
+    color:black;
+    transition:color 0.3s;
+}
+
+a:hover {
+    color:rgb(207, 207, 207);
+}
+
 #left-title{
     position:fixed;
-    width:100vw;
+    width:20vw;
     height:100vw;
     padding:10px;
+    top:95%;
+    z-index: 3;
 }
 
 #left-title h1 {
     font-family: Helvetica;
-    font-weight: 200;
-    font-size: 0.8vw;
+    font-weight: 400;
+    font-size: 1vw;
     line-height: 0.6;
-}
-
-#left-title #bold {
-    font-weight: 500;
+    z-index: 3;
 }
 
 #mid-title{
     position:fixed;
-    width:100vw;
+    width:50vw;
+    left:30vw;
     height:100vw;
     padding:10px;
+    top:95%;
+    z-index: 3;
+
 }
 
 #mid-title h1 {
     position:relative;
-    left:45%;
     font-family: Helvetica;
     font-weight: 400;
-    font-size: 0.8vw;
+    font-size: 1vw;
     line-height: 0.6;
 }
 
 #right-title{
     position:fixed;
-    width:100vw;
+    width:20vw;
+    left:85vw;
     height:100vw;
     padding:10px;
+    top:95%;
+    z-index:3;
+
 }
 
 #right-title h1 {
     position:relative;
-    left:92%;
     font-family: Helvetica;
     font-weight: 400;
-    font-size: 0.8vw;
+    font-size: 1vw;
     line-height: 0.6;
 }
 
-#grid-container {
+#home-img{
+    max-height:70vh;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
     position:relative;
-    top:300px;
-    z-index: -1;
-}
+  }
 
-#works {
-    display: grid; 
-    grid-template-columns: repeat(10, 1fr); 
-    grid-template-rows: repeat(5, 50%); 
-    grid-column-gap: 10px;
-    grid-row-gap: 10px; 
-}
-
-#works #div1 { grid-area: 1 / 1 / 4 / 4; max-width: 100%;} 
-#works #div2 { grid-area: 4 / 2 / 6 / 5; max-width: 100%;} 
-#works #div3 { grid-area: 2 / 4 / 4 / 7; max-width: 100%;} 
-#works #div4 { grid-area: 1 / 7 / 3 / 10; max-width: 100%;} 
-#works #div5 { grid-area: 3 / 8 / 6 / 11; max-width: 100%;} 
+  .mySlides img {
+    position:relative;  
+    top:50%;
+    left:50%;
+    transform:translate(-50%,0);
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
