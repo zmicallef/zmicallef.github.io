@@ -83,7 +83,7 @@ a:hover {
 #right-title{
     position:fixed;
     width:20vw;
-    left:85vw;
+    left:87vw;
     height:100vw;
     padding:10px;
     top:95%;
@@ -101,6 +101,12 @@ a:hover {
 
 #home-img{
     max-height:70vh;
+}
+
+#about p {
+    font-family: Helvetica;
+    font-weight: 400;
+    font-size: 3vw;
 }
 
 * {
