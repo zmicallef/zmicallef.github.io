@@ -173,17 +173,17 @@ a:hover {
     #left-title{
         width:40vw;
         left:10px;
-        top:60vh;
+        top:62vh;
     }
     #mid-title{
         width:95vw;
         left:10px;
-        top:66vh;
+        top:70vh;
     }
     #right-title{
         width:95vw;
         left:10px;
-        top:76vh;
+        top:82vh;
     }
     .mySlides img {
         max-width:80vw;
