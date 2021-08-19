@@ -161,14 +161,14 @@ a:hover {
     }
 
     #left-title h1{
-        font-size: 14px;
+        font-size: 3.5vw;
     }
     #mid-title h1{
-        font-size: 14px;
+        font-size: 3.5vw;
         line-height: 1.5;
     }
     #right-title h1{
-        font-size:14px;
+        font-size:3.5vw;
     }
     #left-title{
         width:40vw;
