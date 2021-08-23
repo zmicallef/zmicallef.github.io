@@ -64,7 +64,7 @@ a:hover {
 #mid-title{
     position:fixed;
     width:50vw;
-    left:30vw;
+    left:40vw;
     height:100vw;
     padding:10px;
     top:95%;
@@ -149,10 +149,14 @@ a:hover {
   }
   
   /* Position the "next button" to the right */
-  .next {
-    right: 0;
+.next {
     border-radius: 3px 0 0 3px;
-  }
+    right:-5px;
+}
+
+.prev {
+    left:-5px;
+}
 
   @media only screen and (max-device-width : 1024px) {
 
