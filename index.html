@@ -4,37 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-    <title>Sophie Spence</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+<div id="circle"></div>
 
+<div id="top-text">
+<p>
+<a href="index.html">Adrian J Song</a><br>
+<a href="about.html">(1) CV</a><br>
+<a href="https://www.instagram.com/adrianjsong/">(2) Follow</a><br>
+<a href="mailto:hello@adrian.com">(3) Contact</a><br>
+</p>
+</div>
 
-<header>
-    <div id="left-title">
-            <a href="index.html"><h1>Sophie Spence</h1></a>
-    </div>    
-    <div id="mid-title">
-            <h1><a href="portrait.html">Portraits </a>,  <a href="landscape.html">Landscapes </a>,  <a href="works.html">Selected Works </a>, <a href="https://bookshopbyuro.com/products/co-publishing-issue-02-water?ltclid=2371b669-fe51-4c02-9fe6-17a34bc56145" target="_blank" rel="noopener noreferrer">Co-Issue 02</a></h1>
-    </div>    
-    <div id="right-title">
-            <h1><a href="about.html">About</a>,  <a href="mailto:soph283@gmail.com">Contact</a>,  <a href="https://www.instagram.com/sspences/" target="_blank" rel="noopener noreferrer">Instagram</a></h1>
-    </div> 
-</header>
+<div id="flex-container">
+  <div id="left-column">
+    <div class="img1">
+    <div class="rotate"><p>An Echo Between Rooms (2021)</p></div>
+    <img src="adrian1.jpg">
+    </div>
+  </div>
 
-<img id="home-img" src="home.png">
+  <div id="right-column">
+    <div class="img1">
+      <div class="rotate"><p>In Twilight, Gently Crush (2019)</p></div>
+      <img src="adrian2.jpg">
+    </div>
+    <div class="img1">
+      <div class="rotate"><p>Shimmering Through The Walls (2019)</p></div>
+      <img src="adrian5.png">
+    </div>
+  </div>
+
+</div>
+
 
 
 </body>
 
 <script>
 
-const acknowledgement = document.querySelector('#acknowledgement');
+let circle = document.getElementById('circle');
+const onMouseMove = (e) =>{
+  circle.style.left = e.pageX + 'px';
+  circle.style.top = e.pageY + 'px';
+}
+document.addEventListener('mousemove', onMouseMove);
 
-acknowledgement.addEventListener('click', () => {
-    document.querySelector('#acknowledgement').style.display="none";
-    document.querySelector('#acknowledgement').style.pointerEvents="none";
-})
 </script>
 
 </html>

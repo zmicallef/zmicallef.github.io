@@ -4,31 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-    <title>Sophie Spence</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>  
+<body>
+    
+<div id="circle"></div>
 
+<div id="top-text">
+<p>
+<a href="index.html">Adrian J Song</a><br>
+<a href="about.html">(1) CV</a><br>
+<a href="https://www.instagram.com/adrianjsong/">(2) Follow</a><br>
+<a href="mailto:hello@adrian.com">(3) Contact</a><br>
+</p>
+</div>
 
-    <header>
-        <div id="left-title">
-                <a href="index.html"><h1>Sophie Spence</h1></a>
-        </div>    
-        <div id="mid-title">
-                <h1><a href="portrait.html">Portraits </a>,  <a href="landscape.html">Landscapes </a>,  <a href="works.html">Selected Works </a>, <a href="https://bookshopbyuro.com/products/co-publishing-issue-02-water?ltclid=2371b669-fe51-4c02-9fe6-17a34bc56145" target="_blank" rel="noopener noreferrer">Co-Issue 02</a></h1>
-        </div>    
-        <div id="right-title">
-                <h1><a href="about.html">About</a>,  <a href="mailto:soph283@gmail.com">Contact</a>,  <a href="https://www.instagram.com/sspences/" target="_blank" rel="noopener noreferrer">Instagram</a></h1>
-        </div> 
-    </header>
-
-<div id="about">
-    <p>Sophie Spence is a Naarm based artist, currently undertaking a Bachelor of Arts (Photography) at RMIT. Her developing photographic practice explores personal experiences of womanhood and mental health. As a member of Collider she explores the use of archival material to consider and undertake a process of unlearning around social histories and sense of place.</p>
-    <p>You can find her at @sspences, or email her at soph283@gmail.com</p>
+<div id="cv">
+<p>
+<br>
+Artist based in Naarm (Melbourne)<br>
+Any commissions + enquiries please email adrianjingsong@gmail.com<br><br><br>
+<div class="italic">(a) Education</div><br><br>
+Bachelor of Photography<br>
+RMIT (2019 - Present)<br><br>
+Advanced Diploma of Visual Art<br>
+RMIT (2018)<br><br>
+Bachelor of Media, Film and Communication<br>
+University of Otago (2016)<br><br><br>
+<div class="italic">(b) Selected Experience</div><br><br>
+2019 – In Twilight, Gently Crush, Arts Itoya, Takeo (Solo Show)<br><br>
+2019 – Shimmering Through the Walls, Studio Kura, Itoshima (Solo Show)<br><br>
+2018 – Not Always at Eye Level, RMIT building 94, Melbourne (Group Show)<br><br>
+2018 – In My Own Skin, First Site, Melbourne (Group Show)<br><br><br>
+<div class="italic">(c) Instagram</div><br><br> 
+instagram.com/adrianjsong<br><br><br>
+<div class="italic">(d) Work</div><br><br>
+2021, Co-Issue 2<br><br>
+2021, Whispering a Secret into a Sealed Bag<br><br>
+2021, An Echo Between Rooms<br><br>
+2019, In Twilight, Gently Crush<br><br>
+</p>
 </div>
 
 </body>
 
+<script>
 
+let circle = document.getElementById('circle');
+const onMouseMove = (e) =>{
+  circle.style.left = e.pageX + 'px';
+  circle.style.top = e.pageY + 'px';
+}
+document.addEventListener('mousemove', onMouseMove);
+
+</script>
 
 </html>

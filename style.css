@@ -1,0 +1,134 @@
+* {
+    cursor:none;
+    text-rendering: geometricPrecision;
+}
+
+#circle {
+    position:absolute;
+    transform:translate(-50%,-50%);
+    height:0.5px;
+    width:0.5px;
+    border-radius:50%;
+    border:6px solid black;
+    pointer-events:none;
+    z-index: 5;
+}
+
+#top-text {
+    font-family: Times;
+    font-weight: 400;
+    font-size: 14px;
+    position:fixed;
+}
+
+#top-text a {
+    text-decoration: none;
+    color:black;
+    transition:color 0.3s;
+}
+
+#top-text a:hover {
+    color:rgb(221, 221, 221);
+}
+
+#cv {
+    position:absolute;
+    left:30%;
+    font-family: Times;
+    font-weight: 400;
+    font-size: 14px;
+    width:60vw;
+}
+
+#cv .italic {
+    font-style: italic;
+}
+
+#flex-container {
+    display:flex;
+    flex-wrap: wrap;
+    max-width:85vw;
+    height:100vh;
+    margin:auto;
+}
+
+#left-column {
+    max-width:50%;
+    min-width: 300px;
+    max-height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-column img {
+    max-width:80%;
+}
+
+#left-column p {
+    font-size: 12px;
+    transform:translateY(-17vw);
+    position:relative;
+    margin:0 auto;
+}
+
+#left-column .rotate {
+    transform: rotate(-90deg);
+    position: absolute;
+    align-self: center;
+}
+
+#left-column .img1 {
+    display:flex;
+    justify-content: space-evenly;
+    width:90%;
+}
+
+#right-column {
+    max-width:50%;
+    min-width: 300px;
+    max-height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#right-column img {
+    max-width:40%;
+    padding:10px;
+    position:relative;
+}
+
+#right-column p {
+    font-size: 12px;
+    transform:translateY(-10vw);
+    position:relative;
+    margin:0 auto;
+}
+
+#right-column .rotate {
+    transform: rotate(-90deg);
+    position: absolute;
+    align-self: center;
+}
+
+#right-column .img1 {
+    display:flex;
+    justify-content: space-evenly;
+    width:90%;
+}
+
+@media only screen and (max-device-width : 1024px) {
+
+    #right-column p {
+        transform:translateY(35vw);
+    }
+
+
+    #left-column p {
+        transform:translateY(35vw);
+    }
+
+}
