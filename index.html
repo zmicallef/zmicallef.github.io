@@ -22,11 +22,12 @@
 
 <div class="flex-container">
     <div class="flex-element-a">
-        <a href="mailto:hello@zachmicallef.com">hello@zachmicallef.com</a><br><br>
-        <a href="https://www.instagram.com/3z22j/" target="_blank">@3z22j</a><br><br>
-        <div style="font-size: 0.9em;">Zachariah Micallef is presently undergoing his Bachelor of Arts (Photography) at RMIT University.
+        <a href="mailto:hello@zachmicallef.com">Email</a><br><br>
+        <a href="https://www.instagram.com/3z22j/" target="_blank">Connect</a><br><br>
+        <a id="content-button" onclick="toggleContent('content-expanded')">(+ Information)</a>
+        <div id="content-expanded"><br>Zachariah Micallef is presently undergoing his Bachelor of Arts (Photography) at RMIT University.
         He currently lives and works in Melbourne (Naarm). 
-        His artistic work revolves around the intersection of photography, and sculpture, interrogating the methods of representation which manifest when imaging non-human objects. 
+        His artistic practice revolves around the intersection of photography, and sculpture, interrogating the methods of representation which manifest when imaging non-human objects. 
         With the help of object-oriented ontology, he creates bodies of work which deconstruct the mechanisms of photography, allowing non-human objects agency in their own representations.
         <br><br>
         Aside from his own artistic practice, Zachariah Micallef works freelance developing publication and front-end website design for various clients.
@@ -37,11 +38,22 @@
 
             <div class="flex-element-b">
                 <dl>
-                    <dd>COLLIDER ARI, 2022</dd>
-                    <br>
-                    <dd>Front-end Website Design</dd>
-                    <br>
-                    <dd>(HTML, CSS, Javascript)</dd>
+                    <dd>2021-2022</dd>
+                </dl>
+            </div>
+        
+            <div class="flex-element-c">
+                SELECTED PROJECTS
+                <br><br><br>
+            </div>
+
+<!-- NEW ROW -->
+
+            <div class="flex-element-b">
+                <dl>
+                    <dd>COLLIDER ARI</dd>
+                    <dd>2022, Website for Artist Collective</dd>
+                    <dd>HTML, CSS, Javascript</dd>
                 </dl>
             </div>
         
@@ -54,9 +66,9 @@
 
             <div class="flex-element-b">
                 <dl>
-                    <dd>TRANSFERENCE MAGAZINE, 2023</dd>
-                    <br>
-                    <dd>Typesetting, Publication Design</dd>
+                    <dd>TRANSFERENCE Magazine</dd>
+                    <dd>2023, Contemporary Art Publication
+                    <dd>Publication Design</dd>
                 </dl>
             </div>
         
@@ -71,11 +83,9 @@
 
             <div class="flex-element-b">
                 <dl>
-                    <dd>BLANK-MARKET WEBSTORE, 2022</dd>
-                    <br>
-                    <dd>Frontend & Backend Website Design</dd>
-                    <br>
-                    <dd>(HTML, CSS, Javascript, NodeJS, Stripe Integration)</dd>
+                    <dd>(B-M) BLANK MARKET</dd>
+                    <dd>2022, Website for Online Marketplace</dd>
+                    <dd>HTML, CSS, Javascript, NodeJS, Stripe</dd>
                 </dl>
             </div>
         
@@ -88,9 +98,9 @@
 
             <div class="flex-element-b">
                 <dl>
-                    <dd>EQUIPAGE, 2021</dd>
-                    <br>
-                    <dd>Typesetting, Publication Design</dd>
+                    <dd>EQUIPAGE</dd>
+                    <dd>2021, Curation of Essays & Research</dd>
+                    <dd>Publication Design</dd>
                 </dl>
             </div>
         
@@ -106,11 +116,9 @@
 
             <div class="flex-element-b">
                 <dl>
-                    <dd>TRANSFERENCE ONLINE, 2022</dd>
-                    <br>
-                    <dd>Front-End Website Design</dd>
-                    <br>
-                    <dd>(Cargo)</dd>
+                    <dd>TRANSFERENCE Online</dd>
+                    <dd>2022, Website for Contemporary Art Platform</dd>
+                    <dd>Cargo</dd>
                 </dl>
             </div>
         
@@ -123,9 +131,9 @@
 
             <div class="flex-element-b">
                 <dl>
-                    <dd>AN INDEX OF VIOLENCE: FIELD JOURNAL, 2023-2024</dd>
-                    <br>
-                    <dd>Typesetting, Publication Design</dd>
+                    <dd>An Index of Violence: Field Journal</dd>
+                    <dd>2023-2024, Artist Book</dd>
+                    <dd>Publication Design</dd>
                 </dl>
             </div>
         
@@ -133,13 +141,30 @@
                 <img src="images/1.jpg">
                 <img src="images/6.jpg">
                 <img src="images/7.jpg">
-                <img src="images/8.jpg">
                 <br><br><br>
             </div>
 
 
 
 </div>
+
+<script>
+
+function toggleContent(id) {
+
+var toggleButton = document.getElementById('content-button');
+var toggleContent = document.getElementById(id);
+
+if (toggleContent.style.display == "block") {
+toggleContent.style.display = "none";
+toggleButton.innerHTML = "(+ Information)";
+} else {
+toggleContent.style.display = "block";
+toggleButton.innerHTML = "(- Less)";
+}
+}
+
+</script>
 
 
 

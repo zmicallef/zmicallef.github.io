@@ -1,9 +1,20 @@
 * {
     padding: 0;
     margin: 0 0 0 0;
-    font-family: Courier New;
-    letter-spacing: -0.01em;
+    font-family: Arial;
+    line-height: 1;
     text-rendering: geometricPrecision;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    background-color: black;
+    color:white;
+    cursor:pointer;
 }
 
 .header {
@@ -14,6 +25,10 @@
     height:3em;
     padding:1em;
     font-size: 1em;
+}
+
+#content-expanded {
+    display:none;
 }
 
 .flex-container {
@@ -73,7 +88,7 @@ img {
     .flex-element-a {
         position:relative;
         width:100vw;
-        max-height:100%;
+        max-height:50%;
     }
     
     .flex-element-b {
@@ -84,6 +99,7 @@ img {
     .flex-element-c {
         left:0;
         width:100vw;
+        padding-bottom: 6em;
     }
 
 }
