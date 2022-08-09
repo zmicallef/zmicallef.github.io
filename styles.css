@@ -27,8 +27,12 @@ a:hover {
     font-size: 1em;
 }
 
+.sub-heading {
+    color:gray;
+}
+
 #content-expanded {
-    display:none;
+    display:block;
 }
 
 .flex-container {
