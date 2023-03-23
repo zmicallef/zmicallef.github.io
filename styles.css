@@ -74,14 +74,14 @@ a:hover {
 .content-element {
     width: 70vw;
     box-sizing: border-box;
-    padding:20px;
+    padding:10px;
     font-size: 0.6em;
     font-weight: 400;
     justify-content: flex-start;
 }
 
 .content-element img {
-    max-width: calc(70vw - 40px);
+    max-width: calc(70vw - 20px);
     height:auto;
 }
 
