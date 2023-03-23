@@ -7,7 +7,8 @@ body {
     margin: 0 0 0 0;
     padding: 0;
     text-rendering: geometricPrecision;
-    font-family: Unica;
+    font-family: Helvetica;
+    font-weight: 800;
 }
 
 a {
@@ -75,6 +76,7 @@ a:hover {
     box-sizing: border-box;
     padding:20px;
     font-size: 0.6em;
+    font-weight: 400;
     justify-content: flex-start;
 }
 
@@ -118,6 +120,7 @@ a:hover {
     .menu-element {
         min-width: 0;
         font-size: 0.8em;
+        display:none;
     }
     
     
