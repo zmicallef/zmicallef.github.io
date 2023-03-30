@@ -25,6 +25,7 @@ a:hover {
     font-size: 2.5em;
     padding:20px;
     width:100vw;
+    font-family: Helvetica;
 }
 
 .header-container {
@@ -34,6 +35,7 @@ a:hover {
     font-size: 1.5em;
     padding:5px;
     box-sizing: border-box;
+    font-family: Helvetica;
 }
 
 .sticky {
