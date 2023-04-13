@@ -21,7 +21,7 @@ body {
 }
 
 .info-2 {
-    width:50vw;
+    width:100vw;
     z-index:2;
     position:fixed;
     display:flex; 
