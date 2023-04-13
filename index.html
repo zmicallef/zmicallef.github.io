@@ -30,6 +30,7 @@
 <div class="info-2">
     <dl>
     <dt>Selected Works:</dt>
+    <dt><div id="img-number">(1/17)</div></dt>
         <dt>01</dt><dd>Wings of Icarus (2020-2023). NASA Archival Imagery. 297x210mm. 256pg. Swiss Hand-Bound. Printed on Envirocare.</dd>
         <dt>05</dt><dd>Object-Oriented Photography: Surface Interaction as Photographic Exposure (2022-2023). 297x210mm. 4pg. Printed on Envirocare.</dd>
         <dt>07</dt><dd>Fragments of Connection: Discovering Merri-Bek (2022-2023). Variable Dimensions. 144pg total. Printed on Envirocare & Office Stationary.</dd>
@@ -63,6 +64,7 @@
   </div>
   <script>
     const images = document.querySelectorAll("#image-container img");
+    var imgnumber = document.getElementById('img-number');
     let index = 0;
 
     function switchImage() {
@@ -73,6 +75,8 @@
       nextImage.classList.add("active");
       currentImage.style.opacity = 0;
       nextImage.style.opacity = 1;
+      let imgindex = index + 1;
+      imgnumber.innerHTML = "(" + imgindex + "/17)"
     }
 
   </script>
