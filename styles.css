@@ -12,7 +12,7 @@ body {
 }
 
 .info {
-    width:80vw;
+    width:100vw;
     z-index:2;
     position:fixed;
     display:flex; 
