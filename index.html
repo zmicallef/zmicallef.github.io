@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="icon.png">
-    <title>Zach Micallef - Web Design</title>
+    <title>Zachariah Micallef</title>
     
     
 </head>
@@ -16,7 +16,9 @@
 
 <div class="info">
     <dl>
-        <dt>@z__h____h</dt>
+        <dt>@z__h____h (...)</dt>
+        <dt>Living and working in Naarm (Melbourne).</dt>
+        <dt>Please get in touch for commissions and enquiries.</dt>
         <dt>Contact:</dt>
         <dd><a href="mailto:hello@zachmicallef.com">hello@zachmicallef.com</a></dd>
         <dt><a href="zachmicallef-portfolio.pdf">Download résumé</a></dt>
@@ -24,53 +26,42 @@
     </dl>
 </div>
 
-<div class="counter">
-<br><div id="img-number">(1/20)</div>
-</div>
-
-
-
 <div class="index">
     <dl>
-    <dt>Selected Works:</dt>
-    
-        <dt>01</dt><dd>Wings of Icarus (2020-2023). </dd>
-        <dt>05</dt><dd>Object-Oriented Photography: Surface Interaction as Photographic Exposure (2022-2023).</dd>
-        <dt>07</dt><dd>Fragments of Connection: Discovering Merri-Bek (2022-2023).</dd>
-        <dt>11</dt><dd>Gallery Reader, RMIT Graduate Exhibition (2022).</dd>
-        <dt>14</dt><dd>COLLIDER ARI Website (2022).</dd>
-        <dt>15</dt><dd>Construction & Destruction: An Index of Violence Gallery Reader, 2022.</dd>
-        <dt>17</dt><dd>TRANSFERENCE Magazine Website (2022).</dd>
-        <dt>18</dt><dd>Charles Eames Furniture from the Design Collection, MOMA (2021).</dd>
+        <dt><div id="img-number">(1/20)</div></dt>
+        <dt><div id="img-name">Wings of Icarus (2020-2023)</div></dt>
+        
     </dl>    
 </div> 
 
 
 <div id="image-container" onclick="switchImage()">
-    <img src="images/icarus1.jpg" alt="Image 1" class="active">
-    <img src="images/icarus2.jpg" alt="Image 2">
-    <img src="images/icarus3.jpg" alt="Image 3">
-    <img src="images/icarus4.jpg" alt="Image 4">
-    <img src="images/oop-1.jpg" alt="Image 5">
-    <img src="images/oop-2.jpg" alt="Image 6">
-    <img src="images/fragment1.jpg" alt="Image 7">
-    <img src="images/fragment2.jpg" alt="Image 8">
-    <img src="images/fragment3.jpg" alt="Image 9">
-    <img src="images/fragment4.jpg" alt="Image 10">
-    <img src="images/reader1.jpg" alt="Image 11">
-    <img src="images/reader2.jpg" alt="Image 12">
-    <img src="images/reader3.jpg" alt="Image 13">
-    <img src="images/coll-web.jpg" alt="Image 14">
-    <img src="images/cdiv-2.jpg" alt="Image 15">
-    <img src="images/cdiv-3.jpg" alt="Image 16">
-    <img src="images/trans-web.jpg" alt="Image 17">
-    <img src="images/Eames-1-min.png" alt="Image 18">
-    <img src="images/Eames-2-min.png" alt="Image 19">
-    <img src="images/Eames-3-min.png" alt="Image 20">
+    <img src="images/icarus1.jpg" alt="Wings of Icarus, 2020-2023" class="active">
+    <img src="images/icarus2.jpg" alt="Wings of Icarus, 2020-2023">
+    <img src="images/icarus3.jpg" alt="Wings of Icarus, 2020-2023">
+    <img src="images/icarus4.jpg" alt="Wings of Icarus, 2020-2023">
+    <img src="images/oop-1.jpg" alt="Object-Oriented Photography: Surface Interaction as Photographic Exposure, 2022-2023">
+    <img src="images/oop-2.jpg" alt="Object-Oriented Photography: Surface Interaction as Photographic Exposure, 2022-2023">
+    <img src="images/fragment1.jpg" alt="Fragments of Connection: Discovering Merri-Bek, 2022-2023">
+    <img src="images/fragment2.jpg" alt="Fragments of Connection: Discovering Merri-Bek, 2022-2023">
+    <img src="images/fragment3.jpg" alt="Fragments of Connection: Discovering Merri-Bek, 2022-2023">
+    <img src="images/fragment4.jpg" alt="Fragments of Connection: Discovering Merri-Bek, 2022-2023">
+    <img src="images/reader1.jpg" alt="Gallery Reader, RMIT Graduate Exhibition, 2022">
+    <img src="images/reader2.jpg" alt="Gallery Reader, RMIT Graduate Exhibition, 2022">
+    <img src="images/reader3.jpg" alt="Gallery Reader, RMIT Graduate Exhibition, 2022">
+    <img src="images/coll-web.jpg" alt="COLLIDER ARI Website, 2022">
+    <img src="images/cdiv-2.jpg" alt="Construction & Destruction: An Index of Violence Gallery Reader, 2022">
+    <img src="images/cdiv-3.jpg" alt="Construction & Destruction: An Index of Violence Gallery Reader, 2022">
+    <img src="images/trans-web.jpg" alt="TRANSFERENCE Magazine Website, 2022">
+    <img src="images/Eames-1-min.png" alt="Charles Eames Furniture from the Design Collection, MOMA, 2021">
+    <img src="images/Eames-2-min.png" alt="Charles Eames Furniture from the Design Collection, MOMA, 2021">
+    <img src="images/Eames-3-min.png" alt="Charles Eames Furniture from the Design Collection, MOMA, 2021">
   </div>
   <script>
+
     const images = document.querySelectorAll("#image-container img");
     var imgnumber = document.getElementById('img-number');
+    var imgname = document.getElementById('img-name');
     let index = 0;
 
     function switchImage() {
@@ -83,7 +74,10 @@
       nextImage.style.opacity = 1;
       let imgindex = index + 1;
       imgnumber.innerHTML = "(" + imgindex + "/20)"
+      imgname.innerHTML = nextImage.alt;
     }
+
+  </script>
 
   </script>
 </body>
