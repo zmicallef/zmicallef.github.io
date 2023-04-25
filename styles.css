@@ -3,12 +3,41 @@
     src: url("NeueHaasUnica-Regular.ttf");
 }
 
+@font-face {
+    font-family: Century;
+    src: url("Century-Schoolbook-Regular.ttf");
+}
+
 body {
     margin: 0 0 0 0;
     padding: 0;
     text-rendering: geometricPrecision;
     font-family: Unica, Helvetica;
     font-size: 0.6em;
+}
+
+.helv {
+    font-family: Helvetica;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.cent {    
+    font-family: Times;
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin-top: 0.2em;
+
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    background-color: black;
+    color:white;
 }
 
 .info {
@@ -70,6 +99,15 @@ body {
 
     .web {
         display:0;
+    }
+
+    .info {
+        box-sizing: border-box;
+    }
+
+    .index {
+        box-sizing: border-box;
+        
     }
 
 }
