@@ -116,6 +116,10 @@ body {
 
 @media only screen and (max-device-width : 1024px) { 
 
+  :root {
+    --fontWeightTitle: 500;
+}
+  
   .work-container {
     width:100vw;
     position: relative;
