@@ -10,7 +10,7 @@ body {
 :root {
     --fontSizeTitle: 0.7em;
     --fontFamilyTitle: "neue-haas-unica";
-    --fontWeightTitle: 400;
+    --fontWeightTitle: 500;
     --lineHeight: 1;
 }
 
@@ -33,9 +33,16 @@ body {
   display:none;
 }
 
+.work-item a {
+  text-decoration: none;
+  color:black;
+}
+.work-item a:hover{color:white;background-color: black;}
+
 .work-title {
   width:fit-content;
   max-width: 30vw;
+  height:fit-content;
 }
 
 .work-title:hover {
@@ -50,6 +57,7 @@ body {
   margin: auto;
   float:left;
   padding: 1em 0 1em 0;
+  font-weight: 400;
 }
 
 .slideshow-container img {
@@ -112,6 +120,11 @@ body {
 .info-container a {
   text-decoration: none;
   color:black;
+}
+
+.info-container a:hover {
+  background-color: black;
+  color:white;
 }
 
 @media only screen and (max-device-width : 1024px) { 
