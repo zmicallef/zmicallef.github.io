@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/fqi4hzp.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/kne8dsr.css">
     <link rel="icon" href="icon.png">
     <title>Zachariah Micallef</title>
     
@@ -15,34 +15,43 @@
 <body>
 
   <div class="work-container">
-  Selected Works<br><br>
+    <div class="title-row bold">
+      <div class="title-name">
+        Selected Works.
+      </div>
+    </div>
+    <br>
+
+    <div class="title-row">
+      <div class="title-name bold">
+        Title.
+      </div>
+      <div class="title-medium bold">
+        Category.
+      </div>
+      <div class="title-year bold">
+        Date.
+      </div>
+    </div>
 
     <!-- WORK 1 -->
 
-  <div class="work-item">  
-    <div class="work-title selectDisable" onclick="toggleWork('work-1')">
-      1.<br>
-      PRESS RMIT UGCD Graduate Showcase, 2023<br>
-      Tags: Identity, Production, Publication, Website
-    </div>  
-  <div  id="work-1" style="display:none;">
-    <dl>
-      <dt>1.1 Collaborators</dt>
-      <dd>Liam Kenna</dd> 
-      <dd>Nicholas Gleeson</dd> 
-      <dd>Timon Meury</dd>
-      <br>
-      <dt>1.2 Special Thanks</dt>
-      <dd>Brad Haylock</dd>
-      <dd>Jiayu Cheng</dd>
-      <dd>Russell Kerr</dd>
-      <dd>Suzie Zezula</dd>
-      <dd>RMIT University</dd>
-      <dd>Bowen Street Makers Space</dd>
-      <br>
-      <dt>1.3 Live Site</dt>
-      <dd><a href="https://www.p-r-e-s-s.com" target="_blank">www.p-r-e-s-s.com</a></dd>
-      </dl>
+    <div class="work-item">
+    <div class="selectDisable button" onclick="toggleWork('work-1')">
+      <div class="title-row">
+        <div class="title-name bold">
+          1. PRESS RMIT UGCD Graduate Showcase
+        </div>
+        <div class="title-medium bold">
+          ID, PR, PU, WF
+        </div>
+        <div class="title-year bold">
+          2023
+        </div>
+      </div>
+    </div>
+  <div  id="work-1" style="display:none;" class="item">
+  
   <div class="slideshow-container selectDisable">
     <img class="mySlides1" src="images/press1.jpg">
     <img class="mySlides1" src="images/press2.jpg">
@@ -54,19 +63,24 @@
   </div>
   </div>
 
-  <br><br>
-
   <!-- WORK 2 -->
 
   <div class="work-item">  
-    <div class="work-title selectDisable" onclick="toggleWork('work-2')">
-      2.<br>
-      Dossier, 2021-2023<br>
-      Tags: Production, Publication
+    <div class="selectDisable button" onclick="toggleWork('work-2')">
+      <div class="title-row">
+        <div class="title-name bold">
+          2. Dossier
+        </div>
+        <div class="title-medium bold">
+          PR, PU
+        </div>
+        <div class="title-year bold">
+          2021-2023
+        </div>
+      </div>
     </div>  
-  <div class="slideshow-container selectDisable" id="work-2" style="display:none;">
+  <div class="slideshow-container selectDisable item" id="work-2" style="display:none;">
     <img class="mySlides2" src="images/dossier1.jpg">
-    <img class="mySlides2" src="images/dossier2.jpg">
     <img class="mySlides2" src="images/dossier3.jpg">
 
     <div class="prev" onclick="plusSlides(-1, 1)"></div>
@@ -74,17 +88,23 @@
   </div>
   </div>
 
-  <br><br>
-
   <!-- WORK 3 -->
 
   <div class="work-item">  
-    <div class="work-title selectDisable" onclick="toggleWork('work-3')">
-      3.<br>
-      Wings of Icarus, 2020-2023<br>
-      Tags: Production, Publication
+    <div class="selectDisable button" onclick="toggleWork('work-3')">
+      <div class="title-row">
+        <div class="title-name bold">
+          3. Wings of Icarus
+        </div>
+        <div class="title-medium bold">
+          PR, PU
+        </div>
+        <div class="title-year bold">
+          2020-2023
+        </div>
+      </div>
     </div>  
-  <div class="slideshow-container selectDisable" id="work-3" style="display:none;">
+  <div class="slideshow-container selectDisable item" id="work-3" style="display: none;">
     <img class="mySlides3" src="images/icarus1.jpg">
     <img class="mySlides3" src="images/icarus2.jpg">
     <img class="mySlides3" src="images/icarus3.jpg">
@@ -96,37 +116,23 @@
   </div>
   </div>
 
-  <br><br>
-
   <!-- WORK 4 -->
 
   <div class="work-item">  
-    <div class="work-title selectDisable" onclick="toggleWork('work-4')">
-      4.<br>
-      Fragments of Connection: Discovering Merri-Bek, 2022<br>
-      Tags: Production, Publication
+    <div class="selectDisable button" onclick="toggleWork('work-4')">
+      <div class="title-row">
+        <div class="title-name bold">
+          4. Fragments of Connection: Discovering Merri-Bek
+        </div>
+        <div class="title-medium bold">
+          PR, PU, RE
+        </div>
+        <div class="title-year bold">
+          2022
+        </div>
+      </div>
     </div>  
-  <div  id="work-4" style="display:none;">
-    <dl>
-      <dt>4.1 Editors</dt>
-      <dd>Deb Higgins</dd>
-      <dd>Eamon Magree</dd>
-      <dd>Evelyn Challinor</dd>
-      <dd>Jay Tyrell</dd>
-      <dd>Pug</dd>
-      <dd>Renatta Premolo</dd>
-      <dd>Sophie Spence</dd>
-      <dd>Zachariah Micallef</dd> 
-      <br>
-      <dt>4.2 Special Thanks</dt>
-      <dd>Alan Hill</dd>
-      <dd>Jody Haines</dd>
-      <dd>Shehab Uddin</dd>
-      <dd>DVP 2022</dd>
-      <dd>RMIT University</dd>
-      <dd>RMIT PlaceLab</dd>
-      </dl>
-  <div class="slideshow-container selectDisable">
+  <div class="slideshow-container selectDisable item" id="work-4" style="display:none;">
     <img class="mySlides4" src="images/fragment1.jpg">
     <img class="mySlides4" src="images/fragment2.jpg">
     <img class="mySlides4" src="images/fragment3.jpg">
@@ -134,21 +140,27 @@
 
     <div class="prev" onclick="plusSlides(-1, 3)"></div>
     <div class="next" onclick="plusSlides(1, 3)"></div>
+  
   </div>
   </div>
-  </div>
-
-  <br><br>
 
   <!-- WORK 5 -->
 
   <div class="work-item">  
-    <div class="work-title selectDisable" onclick="toggleWork('work-5')">
-      5.<br>
-      OOP: Surface Interaction as Photographic Exposure, 2022<br>
-      Tags: Production, Publication, Research
+    <div class="selectDisable button" onclick="toggleWork('work-5')">
+      <div class="title-row">
+        <div class="title-name bold">
+          5. OOP: Surface Interaction as Photographic Exposure
+        </div>
+        <div class="title-medium bold">
+          PR, PU, RE
+        </div>
+        <div class="title-year bold">
+          2022
+        </div>
+      </div>
     </div>  
-  <div class="slideshow-container selectDisable" id="work-5" style="display:none;">
+  <div class="slideshow-container selectDisable item" id="work-5" style="display:none;">
     <img class="mySlides5" src="images/oop-1.jpg">
     <img class="mySlides5" src="images/oop-2.jpg">
 
@@ -157,17 +169,23 @@
   </div>
   </div>
 
-  <br><br>
-
   <!-- WORK 6 -->
 
   <div class="work-item">  
-    <div class="work-title selectDisable" onclick="toggleWork('work-6')">
-      6.<br>
-      Gallery Reader, RMIT School of Art Graduate Exhibition, 2022<br>
-      Tags: Production, Publication
+    <div class="selectDisable button" onclick="toggleWork('work-6')">
+      <div class="title-row">
+        <div class="title-name bold">
+          6. Gallery Reader: RMIT School of Art Graduate Exhibition
+        </div>
+        <div class="title-medium bold">
+          PR, PU, RE
+        </div>
+        <div class="title-year bold">
+          2022
+        </div>
+      </div>
     </div>  
-  <div class="slideshow-container selectDisable" id="work-6" style="display:none;">
+  <div class="slideshow-container selectDisable item" id="work-6" style="display: none;" >
     <img class="mySlides6" src="images/reader1.jpg">
     <img class="mySlides6" src="images/reader2.jpg">
     <img class="mySlides6" src="images/reader3.jpg">
@@ -177,42 +195,46 @@
   </div>
   </div>
 
-  <br><br>
-
   <!-- WORK 7 -->
 
   <div class="work-item">  
-    <div class="work-title selectDisable" onclick="toggleWork('work-7')">
-      7.<br>
-      COLLIDER ARI, 2022<br>
-      Tags: Identity, Website
+    <div class="selectDisable button" onclick="toggleWork('work-7')">
+      <div class="title-row">
+        <div class="title-name bold">
+          7. COLLIDER ARI
+        </div>
+        <div class="title-medium bold">
+          ID, WF, WB
+        </div>
+        <div class="title-year bold">
+          2022
+        </div>
+      </div>
     </div>
-  <div  id="work-7" style="display:none;">
-    <dl>
-      <dt>7.1 Live Site</dt>
-      <dd><a href="https://collider-collective.github.io" target="_blank">www.collider-collective.github.io</a></dd>
-    </dl>
+  <div  id="work-7" style="display:none;" class="item">
   <div class="slideshow-container selectDisable">
     <img src="images/coll-web.jpg">
   </div>
   </div>
   </div>
 
-  <br><br>
-
   <!-- WORK 8 -->
 
   <div class="work-item">  
-    <div class="work-title selectDisable" onclick="toggleWork('work-8')">
-      8.<br>
-      TRANSFERENCE Magazine, 2022<br>
-      Tags: Identity, Website
+    <div class="selectDisable button" onclick="toggleWork('work-8')">
+      <div class="title-row">
+        <div class="title-name bold">
+          8. TRANSFERENCE Magazine
+        </div>
+        <div class="title-medium bold">
+          ID, WF
+        </div>
+        <div class="title-year bold">
+          2022
+        </div>
+      </div>
     </div>
-    <div  id="work-8" style="display:none;">
-      <dl>
-        <dt>8.1 Live Site</dt>
-        <dd><a href="https://transferencemag.com" target="_blank">www.transferencemag.com</a></dd>
-      </dl>
+    <div  id="work-8" style="display:none;" class="item">
   <div class="slideshow-container selectDisable">
     <img src="images/trans-web.jpg">
   </div>
@@ -222,11 +244,130 @@
   </div>
 
   <div class="info-container">
-    Zachariah Micallef<br>
-    Identity, Publication & Web<br>
+
+
+    <div class="title-row bold">
+      <div class="title-index">
+      <span>Index.</span>
+      <br>
+      <br>
+      <span>Identity</span><span class="index-key">ID</span>
+      <br>
+      <span>Production</span><span class="index-key">PR</span>
+      <br>
+      <span>Publication</span><span class="index-key">PU</span>
+      <br>
+      <span>Research</span><span class="index-key">RE</span>
+      <br>
+      <span>Web (Front-End)</span><span class="index-key">WF</span>
+      <br>
+      <span>Web (Back-End)</span><span class="index-key">WB</span>
+      </span>
+      </div>
+    </div>
+
     <br>
-    Naarm (Melbourne Based)<br>
-    Available for Freelance & Contract Work<br>
+    <div class="desc-row bold">
+     Appendix.
+    </div>
+
+
+    <div class="desc-row prestige">
+      <b>[1.]</b> (Kenna, L. Gleeson, N. Meury, T. and Micallef, Z.) (2023) P-R-E-S-S. Available at: http://www.p-r-e-s-s.com/ <i>(Accessed: 02 August 2023)</i>.
+    </div>
+    <div class="desc-row">
+       <i>PRESS</i> is the vessel which encases the work from the graduating cohort from the Bachelor of Design (Communication Design) at RMIT University. With a focus on tangible printed matter, PRESS acts as the container to connect the collection of widely differing works and mediums produced throughout the program. By focusing on the lack of uniformity, PRESS presents a conglomerate of styles connected in part by their lack of consistency. Through the lack of parameters, the works are given space to exist within their own aura; while also revealing unexpected through lines and visual narratives which would not exist within an isolated environment. PRESS reveals the inherent connection between differing stylistic forms, and gives space for the interaction and dialogue between works which would not ordinarily exist.</div>
+    <div class="desc-row">  
+      Every image on the web-page is draggable. By arranging images on the page, you are then able to select the Print Screen option; exporting a user-generated pdf file which is sent via email to the user. The resulting object becomes a synthesis between physical and digital, creating a direct tangible entity which straddles the intersections of two distinctly seperate representative mediums.
+    </div>
+    <div class="desc-row">  
+      Produced in collaboration with Ella Taylor, Finn Stewart, Liam Kenna, Nicholas Gleeson, and Timon Meury.
+    </div> 
+
+    <div class="desc-row prestige">
+      <b>[3.]</b> Micallef, Z. (2020-2023) Wings of Icarus Vol 1. 1st edn. Melbourne, VIC: <i>AUGUST Editions</i>.
+    </div>
+    <div class="desc-row">
+      <i>Wings of Icarus</i> centres around the 1986 STS-51-L Challenger Disaster - A mission which never reached orbit, instead having experienced a structural failure during it’s ascent phase 73 seconds after launch, killing all 7 crew members. The flight was planned as a routine satellite deployment, and was nationally televised by CNN.
+    </div>
+    <div class="desc-row">
+      The work utilises royalty-free NASA archival imagery, alongside the Rogers Commission Report - a presidential inquiry into the issues which eventuated in the failed mission.
+    </div>
+    <div class="desc-row">
+      Through the ununiform composition, the imagery slices into and decontextualises the text, leaving fragments of beaurocratic rationale in tension with the romanticised steel structures. The work doesn’t explicitly speak to it’s intention, instead relying on the viewer to piece together the narrative through fragments of data; thus allowing a much more emotive and bodily experience of a seemingly unimaginable narrative.
+    </div>
+
+    <div class="desc-row prestige">
+      <b>[4.]</b> D, Higgins. E, Magree. E, Challinor. J, Tyrell. R, Premolo. S, Spence. Z, Micallef. (2022) Fragments of Connection: Discovering Merri-bek Vol 1. 1st edn. Brunswick, VIC: <i>RMIT PlaceLab.</i> 
+    </div>
+    <div class="desc-row">
+      <i>Fragments of Connection: Discovering Merri-Bek</i> is a collaborative project created within an RMIT hosted focus group called ‘Visual Politics: Creative Practice as Civil Action’. The project was a two week exploration of place, with the intention of creating a collaborative body of work which incorporated civil action as it’s primary objective.
+    </div>
+    <div class="desc-row">
+      The resulting body of work is centred on the core concept that within a two week period, it is impossible to fully comprehend the dense and complicated histories which inform place - however, by focusing on the transient fragments of our experiences, a collage of perspectives can form which hold justification for their existence.
+    </div>
+    <div class="desc-row">
+      The project encompasses both individual and collaborative works of varying dimensions - photographic, illustrutive, sculptural, and text - brought together within a single visual language. The subject matter differs in the same way as subjective experience, but is tied together through a common theme of connection and intent.
+    </div>
+    <div class="desc-row">
+      The resulting items are enclosed within an envelope which includes an appendix, alongside a statement of intent. Each of the contents justify their own existence seperately, but when placed together create a dense array of understanding.
+    </div>
+    <div class="desc-row">
+      <i>Editors. Deb Higgins, Eamon Magree, Evelyn Challinor, Jay Tyrell, Pug, Renatta Premolo, Sophie Spence, & Zachariah Micallef</i>
+    </div>
+
+    <div class="desc-row prestige">
+      <b>[5.]</b> Micallef, Z. (2022) Object-Oriented Photography: Surface Interaction as Photographic Exposure Vol 1. 1st edn. Melbourne, VIC: <i>AUGUST Editions.</i>
+    </div>
+    <div class="desc-row">
+      <i>Object-Oriented Photography: Surface Interaction as Photographic Exposure</i> is a printed version of a thesis written in late 2022. The text is a critique of the dominant canon of photographic practice, proposing an alternative method of working which deconstructs the human-centric heirarchy and allows non-human agency in their own photographic representations.
+    </div>
+    <div class="desc-row">
+      The printed object intends to maximise readability, while also creating an organic text-flow which doesn’t follow the traditional essay typographies. The work is heavily influenced by concrete poetry, and acts as both an informative document as well as a structural aesthetic composition.
+    </div>
+
+    <div class="desc-row prestige">
+      <b>[6.]</b> Freeman, M. and Micallef, Z. (2022) Gallery Reader - RMIT School of Art Graduate Exhibition Vol 1. 1st edn. Melbourne, VIC: <i>AUGUST Editions.</i>
+    </div>
+    <div class="desc-row">
+      This reader was created for the 2022 RMIT Graduate Exhibition, in particular for the post-photographic works of both Maud Freeman and myself.
+    </div>
+    <div class="desc-row">
+      Exhibiting within a traditionally minded photographic institution, we deemed it necessary to provide further context to the works in order for further and deeper engagement than placqards would allow. In addition to expanded statements for each of the projects, reprinted essays which strongly informed the works were also included.
+    </div>
+    <div class="desc-row">
+      The formatting was focused on maximising the amount of text per page, while also allowing for clear readability. The work was then published in a small edition, allowing a small number of attendees to take the reader home in order to further engage with the work and text.
+    </div>
+
+    <div class="desc-row prestige">
+      <b>[7.]</b> Micallef, Z. (2022) Collider, COLLIDER. Available at: https://collider-collective.github.io/ <i>(Accessed: 02 August 2023).</i>
+    </div>
+    <div class="desc-row">
+      <i>COLLIDER ARI</i> is a Melbourne based artist collective formed in 2020, focused on creating bodies of work which intend to make the material entaglements of the environment visible.
+    </div>
+    <div class="desc-row">
+      The website was created as a landing platform, launched in joint with an exhibition at First Site, as part of the PHOTO22 program. Via QR code at location, visitors were encouraged to engage with the website and learn more about the context informing the works on site.
+    </div>
+    <div class="desc-row">
+      The site utilises a modular flex display, allowing for seamless scaling between different device sizes. Another benefit of the layout is it allows simple addition of content, allowing someone with little programming experience to make changes and additions should they be necessary. The site is entirely created within vanilla HTML and CSS, with limited Javascript that allows fast load times and responsive interaction.
+    </div>
+
+    <div class="desc-row prestige">
+      <b>[8.]</b> Micallef, Z. and Song, A.J. (2022) TRANSFERENCE , Transference Magazine. Available at: https://transferencemag.com/ <i>(Accessed: 02 August 2023).</i>
+    </div>
+    <div class="desc-row">
+      <i>TRANSFERENCE Magazine</i> is an online outlet and research platform with a focus on contemporary art and photography, founded by Adrian J Song in 2021.
+    </div>
+    <div class="desc-row">
+      The website was created to prioritise mobile viewing, as the most common method of interaction was through an Instagram web link. As such, each component of the website was created to allow maximum real estate for the imagery as possible - with as few distracting adornments as possible.
+    </div>
+    <div class="desc-row">
+      The layout was also created with the potential of a printed magazine in future. Each component was placed in a way in which would translate to a printed page as seamlessly as possible; allowing for visual continuity between different mediums as the platform expands.
+    </div>
+    <br>
+    <div class="desc-row bold">
+    CV + Info.
+    <br>
     <dl>
     <dt>i.</dt>
     <dt>CONTACT</dt>
@@ -284,7 +425,8 @@
     <dt>ARTISTIC PRACTICE</dt>
     <dd><a href="http://zachmicallef.com" target="_blank">www.zachmicallef.com</a></dd>
     <dd><a href="https://www.instagram.com/3z22j/" target="_blank">@3z22j</a></dd>
-    </dl>
+    </dl> 
+    </div>
 
   </div>
 
@@ -321,6 +463,14 @@
 
     function toggleWork(id) {
       var workItem = document.getElementById(id);
+      
+      var workList = document.getElementsByClassName('item');
+	    for (var i = 0, j = workList.length; i < j; i++) {
+		    var visible = workList[i].style.display;
+		    if(visible == "block") {
+			    workList[i].style.display = "none";
+		    }
+	    };
 
       if (workItem.style.display == "none") {
         workItem.style.display = "block";

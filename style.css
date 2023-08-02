@@ -14,6 +14,41 @@ body {
     --lineHeight: 1;
 }
 
+.title-row {
+  width:100%;
+  box-sizing: border-box;
+  padding:0.5em;
+  display:flex;
+  flex-direction: row;
+  font-family: var(--fontFamilyTitle);
+  font-size: var(--fontSizeBody);
+}
+
+.title-name {
+  width:55%;
+  max-height: 2.5ex;
+  box-sizing: border-box;
+  padding-right: 1em;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.title-medium {
+  width:25%;
+  overflow:hidden;
+
+  box-sizing: border-box;
+}
+
+.title-year {
+  width:20%;
+  text-align: right;
+  overflow:hidden;
+
+  box-sizing: border-box;
+}
+
 .work-container {
   width:50vw;
   height:100vh;
@@ -22,7 +57,6 @@ body {
   padding:1em;
   font-size: var(--fontSizeTitle);
   font-family: var(--fontFamilyTitle);
-  font-weight: var(--fontWeightTitle);
   line-height: var(--lineHeight);
   overflow-y: auto;
   -ms-overflow-style: none;  
@@ -33,23 +67,11 @@ body {
   display:none;
 }
 
-.work-item a {
+.work-container .button {
   text-decoration: none;
   color:black;
 }
-.work-item a:hover{color:white;background-color: black;}
-
-.work-title {
-  width:fit-content;
-  max-width: 30vw;
-  height:fit-content;
-}
-
-.work-title:hover {
-  background-color: black;
-  color:white;
-  cursor: pointer;
-}
+.work-container .button:hover{color:white;background-color: black;cursor: pointer;}
 
 .slideshow-container {
   max-width: 50vw;
@@ -57,7 +79,6 @@ body {
   margin: auto;
   float:left;
   padding: 1em 0 1em 0;
-  font-weight: 500;
 }
 
 .slideshow-container img {
@@ -104,16 +125,15 @@ body {
 }
 
 .info-container {
-  width:50vw;
+  width:30vw;
   height:100vh;
   position: absolute;
   box-sizing: border-box;
   padding:1em;
   font-size: var(--fontSizeTitle);
   font-family: var(--fontFamilyTitle);
-  font-weight: var(--fontWeightTitle);
   line-height: var(--lineHeight);
-  left:50vw;
+  left:70vw;
   overflow-y: auto;
 }
 
@@ -125,6 +145,37 @@ body {
 .info-container a:hover {
   background-color: black;
   color:white;
+}
+
+.title-index {
+  width:100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.title-index .index-key {
+  position:absolute;
+  left: 30%;
+}
+
+.desc-row {
+  box-sizing: border-box;
+  padding:0.5em;
+  width:100%;
+  font-family: var(--fontFamilyBody);
+  font-size: var(--fontSizeBody);
+  line-height: var(--lineHeight);
+} 
+
+.prestige {
+  font-family: "prestige-elite-std";
+}
+
+.bold {
+  font-weight: var(--fontWeightTitle);
 }
 
 @media only screen and (max-device-width : 1024px) { 
@@ -152,7 +203,6 @@ body {
     height:auto;
     left:0;
     position: relative;
-    padding-top: 10em;
   }
 
   .prev, .next {
