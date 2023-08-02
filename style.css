@@ -26,7 +26,6 @@ body {
 
 .title-name {
   width:55%;
-  max-height: 2.5ex;
   box-sizing: border-box;
   padding-right: 1em;
   overflow: hidden;
@@ -182,6 +181,9 @@ display:none;
 
 .bold {
   font-weight: var(--fontWeightTitle);
+}
+
+.title {
 }
 
 @media only screen and (max-device-width : 1024px) { 
