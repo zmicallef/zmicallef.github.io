@@ -50,7 +50,7 @@ body {
 }
 
 .work-container {
-  width:50vw;
+  width:70vw;
   height:100vh;
   position: absolute;
   box-sizing: border-box;
@@ -74,7 +74,7 @@ body {
 .work-container .button:hover{color:white;background-color: black;cursor: pointer;}
 
 .slideshow-container {
-  max-width: 50vw;
+  max-width: 70vw;
   position: relative;
   margin: auto;
   float:left;
@@ -135,6 +135,12 @@ body {
   line-height: var(--lineHeight);
   left:70vw;
   overflow-y: auto;
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
+
+.info-container::-webkit-scrollbar {
+display:none;
 }
 
 .info-container a {

@@ -37,8 +37,8 @@
     <!-- WORK 1 -->
 
     <div class="work-item">
-    <div class="selectDisable button" onclick="toggleWork('work-1')">
-      <div class="title-row">
+    <div class="selectDisable" onclick="toggleWork('work-1')">
+      <div class="title-row button">
         <div class="title-name bold">
           1. PRESS RMIT UGCD Graduate Showcase
         </div>
@@ -66,8 +66,8 @@
   <!-- WORK 2 -->
 
   <div class="work-item">  
-    <div class="selectDisable button" onclick="toggleWork('work-2')">
-      <div class="title-row">
+    <div class="selectDisable" onclick="toggleWork('work-2')">
+      <div class="title-row button">
         <div class="title-name bold">
           2. Dossier
         </div>
@@ -91,8 +91,8 @@
   <!-- WORK 3 -->
 
   <div class="work-item">  
-    <div class="selectDisable button" onclick="toggleWork('work-3')">
-      <div class="title-row">
+    <div class="selectDisable" onclick="toggleWork('work-3')">
+      <div class="title-row button">
         <div class="title-name bold">
           3. Wings of Icarus
         </div>
@@ -119,8 +119,8 @@
   <!-- WORK 4 -->
 
   <div class="work-item">  
-    <div class="selectDisable button" onclick="toggleWork('work-4')">
-      <div class="title-row">
+    <div class="selectDisable" onclick="toggleWork('work-4')">
+      <div class="title-row button">
         <div class="title-name bold">
           4. Fragments of Connection: Discovering Merri-Bek
         </div>
@@ -147,8 +147,8 @@
   <!-- WORK 5 -->
 
   <div class="work-item">  
-    <div class="selectDisable button" onclick="toggleWork('work-5')">
-      <div class="title-row">
+    <div class="selectDisable" onclick="toggleWork('work-5')">
+      <div class="title-row button">
         <div class="title-name bold">
           5. OOP: Surface Interaction as Photographic Exposure
         </div>
@@ -172,8 +172,8 @@
   <!-- WORK 6 -->
 
   <div class="work-item">  
-    <div class="selectDisable button" onclick="toggleWork('work-6')">
-      <div class="title-row">
+    <div class="selectDisable" onclick="toggleWork('work-6')">
+      <div class="title-row button">
         <div class="title-name bold">
           6. Gallery Reader: RMIT School of Art Graduate Exhibition
         </div>
@@ -198,8 +198,8 @@
   <!-- WORK 7 -->
 
   <div class="work-item">  
-    <div class="selectDisable button" onclick="toggleWork('work-7')">
-      <div class="title-row">
+    <div class="selectDisable" onclick="toggleWork('work-7')">
+      <div class="title-row button">
         <div class="title-name bold">
           7. COLLIDER ARI
         </div>
@@ -221,8 +221,8 @@
   <!-- WORK 8 -->
 
   <div class="work-item">  
-    <div class="selectDisable button" onclick="toggleWork('work-8')">
-      <div class="title-row">
+    <div class="selectDisable" onclick="toggleWork('work-8')">
+      <div class="title-row button">
         <div class="title-name bold">
           8. TRANSFERENCE Magazine
         </div>
@@ -464,15 +464,16 @@
     function toggleWork(id) {
       var workItem = document.getElementById(id);
       
-      var workList = document.getElementsByClassName('item');
-	    for (var i = 0, j = workList.length; i < j; i++) {
-		    var visible = workList[i].style.display;
-		    if(visible == "block") {
-			    workList[i].style.display = "none";
-		    }
-	    };
+      
 
       if (workItem.style.display == "none") {
+        var workList = document.getElementsByClassName('item');
+	      for (var i = 0, j = workList.length; i < j; i++) {
+		      var visible = workList[i].style.display;
+		      if(visible == "block") {
+			    workList[i].style.display = "none";
+		      }
+	      };
         workItem.style.display = "block";
       } else {
         workItem.style.display = "none";
