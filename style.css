@@ -14,6 +14,15 @@ body {
     --lineHeight: 1;
 }
 
+.placeholder {
+  font-family: var(--fontFamilyTitle);
+  font-size: 1em;
+  box-sizing: border-box;
+  padding: 0.5em;
+  width:30vw;
+  line-height: 1.1;
+}
+
 .title-row {
   width:100%;
   box-sizing: border-box;
@@ -215,6 +224,10 @@ display:none;
 
   .prev, .next {
     width: calc(50vw - 4em);
+  }
+
+  .placeholder {
+    width:100vw;
   }
 
 }
