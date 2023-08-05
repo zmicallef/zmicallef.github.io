@@ -8,29 +8,21 @@ body {
 }
 
 :root {
-    --fontSizeTitle: 0.7em;
+    --fontSizeTitle: 0.9em;
     --fontFamilyTitle: "neue-haas-unica";
-    --fontWeightTitle: 500;
+    --fontWeightTitle: 400;
     --lineHeight: 1;
-}
-
-.placeholder {
-  font-family: var(--fontFamilyTitle);
-  font-size: 1em;
-  box-sizing: border-box;
-  padding: 0.5em;
-  width:30vw;
-  line-height: 1.1;
 }
 
 .title-row {
   width:100%;
   box-sizing: border-box;
-  padding:0.5em;
+  padding:0.3em;
   display:flex;
   flex-direction: row;
   font-family: var(--fontFamilyTitle);
   font-size: var(--fontSizeBody);
+  line-height: 1.2;
 }
 
 .title-name {
@@ -62,10 +54,12 @@ body {
   height:100vh;
   position: absolute;
   box-sizing: border-box;
-  padding:1em;
+  padding:0.3em;
+  left:30vw;
   font-size: var(--fontSizeTitle);
   font-family: var(--fontFamilyTitle);
   line-height: var(--lineHeight);
+  font-weight: var(--fontWeightTitle);
   overflow-y: auto;
   -ms-overflow-style: none;  
   scrollbar-width: none; 
@@ -136,15 +130,18 @@ body {
   width:30vw;
   height:100vh;
   position: absolute;
+  top:0;
   box-sizing: border-box;
-  padding:1em;
+  padding:0.3em;
   font-size: var(--fontSizeTitle);
   font-family: var(--fontFamilyTitle);
   line-height: var(--lineHeight);
-  left:70vw;
+  font-weight: var(--fontWeightTitle);
   overflow-y: auto;
   -ms-overflow-style: none;  
   scrollbar-width: none; 
+  border-right: 1px solid black;
+  
 }
 
 .info-container::-webkit-scrollbar {
@@ -184,27 +181,57 @@ display:none;
   line-height: var(--lineHeight);
 } 
 
-.prestige {
-  font-family: "prestige-elite-std";
+.desc-title {
+  box-sizing: border-box;
+  padding:0.5em;
+  display:flex;
+  flex-direction: row;
+  gap:10%;
+  font-size: calc(var(--fontSizeTitle) - 0.2em);
+}
+
+.desc-title-item {
+  min-width: 35%;
+}
+
+.small {
+  font-size: calc(var(--fontSizeTitle) - 0.2em);
 }
 
 .bold {
-  font-weight: var(--fontWeightTitle);
+  font-weight: 400;
 }
 
-.title {
-}
+ .home {
+  max-width: 30%;
+} 
 
 @media only screen and (max-device-width : 1024px) { 
 
   :root {
-    --fontWeightTitle: 500;
-}
+    --fontSizeTitle: 0.8em;
+    --fontFamilyTitle: "neue-haas-unica";
+    --fontWeightTitle: 400;
+    --lineHeight: 1;
+  } 
   
   .work-container {
     width:100vw;
+    left:0;
     position: relative;
     height:auto;
+  }
+
+  .small {
+    font-size: var(--fontSizeTitle);
+  }
+
+  .desc-title {
+    font-size: var(--fontSizeTitle);
+  }
+
+  .desc-title-item {
+    min-width: 35%;
   }
 
   .work-title {
@@ -220,14 +247,15 @@ display:none;
     height:auto;
     left:0;
     position: relative;
+    border-right: 0;
   }
 
   .prev, .next {
     width: calc(50vw - 4em);
   }
 
-  .placeholder {
-    width:100vw;
+  .home {
+    max-width: 100vw;
   }
 
 }
