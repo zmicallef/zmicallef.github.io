@@ -16,17 +16,17 @@
 
   <div class="work-container">
 
-<!--     <div class="title-row small">
+  <div class="title-row small">
       <div class="title-name bold">
-        TITLE
+        Selected Works
       </div>
       <div class="title-medium bold">
-        TAGS
+        -
       </div>
       <div class="title-year bold">
-        DATE
+        -
       </div>
-    </div> -->
+    </div> 
 
     <!-- WORK 1 -->
 
@@ -235,37 +235,27 @@
   </div>
   </div>
 
+  <div class="work-item small">
+    <div class="selectDisable" onclick="toggleWork('index')">
+      <div class="title-row button">
+        <div class="title-name bold">
+          Index
+        </div>
+        <div class="title-medium bold">
+          -
+        </div>
+        <div class="title-year bold">
+          -
+        </div>
+      </div>
+    </div>
+  </div>
+
   </div>
 
   <br>
 
   <div class="info-container">
-
-   <div class="title-row bold">
-      <div class="title-index">
-      <span class="title">INDEX</span>
-      <br>
-      <br>
-      <span class="small">Identity</span><span class="index-key small">ID</span>
-      <br>
-      <span class="small">Production</span><span class="index-key small">PR</span>
-      <br>
-      <span class="small">Publication</span><span class="index-key small">PU</span>
-      <br>
-      <span class="small">Research</span><span class="index-key small">RE</span>
-      <br>
-      <span class="small">Web (Front-End)</span><span class="index-key small">WF</span>
-      <br>
-      <span class="small">Web (Back-End)</span><span class="index-key small">WB</span>
-      </span>
-      </div>
-    </div>
-    
-    <br>
-
-    <div class="desc-row bold">
-     <span class="title">APPENDIX</span>
-    </div>
 
     <div class="desc-title">
       <div>
@@ -291,7 +281,7 @@
         <br>
         36 pages  
         <br><br>
-        www.p-r-e-s-s.com
+        <a href="https:www.p-r-e-s-s.com" target="_blank">www.p-r-e-s-s.com</a>
       </div> 
     </div>
 
@@ -473,7 +463,7 @@
       </div> 
 
       <div class="desc-title-item">
-        www.collider-collective.github.io
+        <a href="https://collider-collective.github.io/" target="_blank">www.collider-collective.github.io</a>
       </div> 
     </div>
 
@@ -501,7 +491,7 @@
       </div> 
 
       <div class="desc-title-item">
-        www.transferencemag.com
+        <a href="https://transferencemag.com/" target="_blank">www.transferencemag.com</a>
       </div> 
     </div>
 
@@ -518,7 +508,7 @@
     <br>
 
     <div class="desc-row bold">
-    <span class="title">CV + INFO</span>
+    <span class="title small">CV + INFO</span>
     <br>
     <dl class="small">
     <dt>i.</dt>
@@ -581,6 +571,35 @@
     </div>
 
   </div> 
+
+  <div class="index-container" id="index">
+    <div class="title-index">
+      <span class="small">Index</span>
+    </div>
+
+    <br>
+
+    <div class="title-index" >
+    <span class="small">Identity</span><span class="index-key small">ID</span>
+    <br>
+    <span class="small">Production</span><span class="index-key small">PR</span>
+    <br>
+    <span class="small">Publication</span><span class="index-key small">PU</span>
+    <br>
+    <span class="small">Research</span><span class="index-key small">RE</span>
+    <br>
+    <span class="small">Web (Front-End)</span><span class="index-key small">WF</span>
+    <br>
+    <span class="small">Web (Back-End)</span><span class="index-key small">WB</span>
+    </span>
+    </div>
+
+    <br>
+
+    <div class="title-index">
+      <span class="small"><a onclick="toggleWork('index')">Close Menu</a></span>
+    </div>
+  </div>
 
   <script>
     var slideIndex = [1, 1, 1, 1, 1, 1];

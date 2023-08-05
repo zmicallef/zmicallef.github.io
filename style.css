@@ -158,9 +158,16 @@ display:none;
   color:white;
 }
 
-.title-index {
+.index-container {
   width:100%;
+  background-color: black;
+  color:white;
+  position:fixed;
+  bottom:0;
+  font-family: var(--fontFamilyTitle);
+  font-size: var(--fontSizeTitle);
   box-sizing: border-box;
+  padding:0.3em;
   overflow: hidden;
   text-overflow:ellipsis;
   white-space: nowrap;
@@ -169,7 +176,11 @@ display:none;
 
 .title-index .index-key {
   position:absolute;
-  left: 30%;
+  left: 10%;
+}
+
+.title-index a:hover {
+  cursor: pointer;
 }
 
 .desc-row {
@@ -257,6 +268,10 @@ display:none;
 
   .home {
     max-width: 100vw;
+  }
+
+  .title-index .index-key {
+    left: 30%;
   }
 
 }
