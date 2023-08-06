@@ -173,6 +173,7 @@ display:none;
   text-overflow:ellipsis;
   white-space: nowrap;
   line-height: 1;
+  display:none;
 }
 
 .title-index .index-key {
