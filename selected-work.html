@@ -236,7 +236,7 @@
   </div>
 
   <div class="work-item small">
-    <div class="selectDisable" onclick="toggleWork('index')">
+    <div class="selectDisable" onclick="toggleSection('index')">
       <div class="title-row button">
         <div class="title-name bold">
           Index
@@ -255,7 +255,7 @@
 
   <br>
 
-  <div class="info-container">
+  <div class="info-container" id="info">
 
     <div class="desc-title">
       <div>
@@ -599,6 +599,8 @@
     <div class="title-index">
       <span class="small"><a onclick="toggleWork('index')">Close Menu</a></span>
     </div>
+
+    <br>
   </div>
 
   <script>
@@ -635,8 +637,6 @@
     function toggleWork(id) {
       var workItem = document.getElementById(id);
       
-      
-
       if (workItem.style.display == "none") {
         var workList = document.getElementsByClassName('item');
 	      for (var i = 0, j = workList.length; i < j; i++) {
@@ -646,6 +646,16 @@
 		      }
 	      };
         workItem.style.display = "block";
+      } else {
+        workItem.style.display = "none";
+      };
+    }
+
+    function toggleSection(id) {
+      var workItem = document.getElementById(id);
+      
+      if (workItem.style.display == "none") {
+       workItem.style.display = "block";
       } else {
         workItem.style.display = "none";
       };
