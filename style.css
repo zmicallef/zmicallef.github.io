@@ -284,10 +284,7 @@ display:none;
   }
 
   .home {
-    min-width: 100vw;
-    top:0;
-    left:0;
-    transform: translate(0,0);
+    min-width: 60vw;
   }
 
   .title-index .index-key {
@@ -349,15 +346,12 @@ display:none;
     width: calc(50vw - 4em);
   }
 
-  .home {
-    min-width: 85vh;
-    top:0;
-    left:0;
-    transform: translate(0,0);
-  }
-
   .title-index .index-key {
     left: 30%;
+  }
+
+  .home {
+    min-width: 80vh;
   }
 
   .padding {
