@@ -310,7 +310,7 @@ display:none;
   } 
   
   .work-container {
-    width:90vh;
+    width:85vh;
     left:0;
     position: relative;
     height:auto;
@@ -329,15 +329,15 @@ display:none;
   }
 
   .work-title {
-    max-width: 90vh;
+    max-width: 85vh;
   }
 
   .slideshow-container {
-    max-width: 90vh;
+    max-width: 85vh;
   }
 
   .info-container {
-    width:90vh;
+    width:85vh;
     height:auto;
     left:0;
     position: relative;
@@ -350,7 +350,7 @@ display:none;
   }
 
   .home {
-    min-width: 90vh;
+    min-width: 85vh;
     top:0;
     left:0;
     transform: translate(0,0);
@@ -372,7 +372,7 @@ display:none;
     transform: rotate(-90deg);
     transform-origin: left top;
     width: 100vh;
-    height: 90vw;
+    height: 85vw;
     overflow-x: scroll;
     overflow-y: hidden;
     position: absolute;
