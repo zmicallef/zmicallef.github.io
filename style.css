@@ -302,18 +302,6 @@ display:none;
 
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    height: 100vw;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-
   :root {
     --fontSizeTitle: 0.8em;
     --fontFamilyTitle: "neue-haas-unica";
@@ -322,7 +310,7 @@ display:none;
   } 
   
   .work-container {
-    width:90vh;
+    width:80vh;
     left:0;
     position: relative;
     height:auto;
@@ -341,15 +329,15 @@ display:none;
   }
 
   .work-title {
-    max-width: 90vh;
+    max-width: 80vh;
   }
 
   .slideshow-container {
-    max-width: 90vh;
+    max-width: 80vh;
   }
 
   .info-container {
-    width:90vh;
+    width:80vh;
     height:auto;
     left:0;
     position: relative;
@@ -362,7 +350,7 @@ display:none;
   }
 
   .home {
-    min-width: 90vh;
+    min-width: 80vh;
     top:0;
     left:0;
     transform: translate(0,0);
@@ -379,4 +367,18 @@ display:none;
   .index {
     display:none;
   }
+  
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+
 }
