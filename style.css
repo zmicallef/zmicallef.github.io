@@ -322,7 +322,7 @@ display:none;
   } 
   
   .work-container {
-    width:95vh;
+    width:90vh;
     left:0;
     position: relative;
     height:auto;
@@ -341,15 +341,15 @@ display:none;
   }
 
   .work-title {
-    max-width: 95vh;
+    max-width: 90vh;
   }
 
   .slideshow-container {
-    max-width: 95vh;
+    max-width: 90vh;
   }
 
   .info-container {
-    width:95vh;
+    width:90vh;
     height:auto;
     left:0;
     position: relative;
@@ -362,7 +362,7 @@ display:none;
   }
 
   .home {
-    min-width: 95vh;
+    min-width: 90vh;
     top:0;
     left:0;
     transform: translate(0,0);
