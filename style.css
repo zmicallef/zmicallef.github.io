@@ -236,6 +236,14 @@ display:none;
 
 @media only screen and (max-device-width : 1024px) { 
 
+  /* body {
+    transform: rotate(90deg);
+    width:100vh;
+    height:100vw;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  } */
+
   :root {
     --fontSizeTitle: 0.8em;
     --fontFamilyTitle: "neue-haas-unica";
@@ -244,7 +252,7 @@ display:none;
   } 
   
   .work-container {
-    width:100vw;
+    width:100vh;
     left:0;
     position: relative;
     height:auto;
@@ -263,15 +271,15 @@ display:none;
   }
 
   .work-title {
-    max-width: 100vw;
+    max-width: 100vh;
   }
 
   .slideshow-container {
-    max-width: 100vw;
+    max-width: 100vh;
   }
 
   .info-container {
-    width:100vw;
+    width:100vh;
     height:auto;
     left:0;
     position: relative;
@@ -284,7 +292,7 @@ display:none;
   }
 
   .home {
-    min-width: 100vw;
+    min-width: 100vh;
     top:0;
     left:0;
     transform: translate(0,0);
@@ -298,4 +306,23 @@ display:none;
     display:none;
   }
 
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .index {
+    display:none;
+  }
 }
