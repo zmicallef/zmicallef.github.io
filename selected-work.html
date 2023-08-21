@@ -654,12 +654,15 @@
 	      for (var i = 0, j = workList.length; i < j; i++) {
 		      var visible = workList[i].style.display;
 		      if(visible == "block") {
+          workList[i].parentElement.classList.remove("active");
 			    workList[i].style.display = "none";
 		      }
 	      };
         workItem.style.display = "block";
+        workItem.parentElement.classList.add("active");
       } else {
         workItem.style.display = "none";
+        workItem.parentElement.classList.remove("active");
       };
     }
 

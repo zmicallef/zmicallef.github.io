@@ -223,7 +223,6 @@ display:none;
   left:50%;
   top:50%;
   transform:translate(-50%,-50%);
-  background-color: rgb(68, 250, 68);
   font-family: var(--fontFamilyTitle);
   font-weight: 400;
   box-sizing: border-box;
@@ -231,6 +230,15 @@ display:none;
   font-size: var(--fontSizeTitle);
 /*   box-shadow: 0 0 15px 15px rgb(68, 250, 68);
  */} 
+
+ .home img {
+   width: 100%;
+   height:auto;
+ }
+
+ .active {
+   background-color: rgb(244, 244, 244);
+ }
 
 
 
